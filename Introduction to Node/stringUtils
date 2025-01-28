@@ -1,0 +1,13 @@
+// stringUtils.js
+function toUpperCase(str) {
+  return str.toUpperCase();
+}
+module.exports = {
+  toUpperCase
+};
+
+
+// app.js
+const { toUpperCase } = require('./stringUtils');
+const phrase = "hello node.js modules";
+console.log(toUpperCase(phrase));
