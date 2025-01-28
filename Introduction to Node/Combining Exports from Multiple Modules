@@ -1,0 +1,27 @@
+// uppercase.js
+function uppercase(str) {
+  return str.toUpperCase();
+}
+module.exports = uppercase;
+
+
+// lowercase.js
+function lowercase(str) {
+  return str.toLowerCase();
+}
+module.exports = lowercase;
+
+
+// stringIndex.js
+const uppercase = require('./uppercase');
+const lowercase = require('./lowercase');
+module.exports = {
+  uppercase,
+  lowercase
+};
+
+
+// stringApp.js
+const { uppercase, lowercase } = require('./stringIndex');
+console.log(uppercase("Hello Node!"));
+console.log(lowercase("Hello Node!"));
