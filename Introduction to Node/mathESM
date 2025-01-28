@@ -1,0 +1,13 @@
+/ mathESM.mjs
+export function square(x) {
+  return x * x;
+}
+export function cube(x) {
+  return x * x * x;
+}
+
+
+// index.mjs
+import { square, cube } from './mathESM.mjs';
+console.log("Square of 4:", square(4));
+console.log("Cube of 3:", cube(3));
